@@ -17,19 +17,35 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header>
-            <nav class="navbar sticky-top navbar-expand">
+        <header class="sticky-top">
+            <nav id="navBar" class="navbar bg-white opacity-100 container-fluid navbar-expand">
                 <span class="navbar-brand"><a href="#" class="text-decoration-none">Drake's Portfolio</a></span>
                 <span class="flex-fill"></span>
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#"  class="w3-hover-text-amber nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#"  class="w3-hover-text-amber nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#"  class="w3-hover-text-amber nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#"  class="w3-hover-text-blue nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#"  class="w3-hover-text-blue nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#"  class="w3-hover-text-blue nav-link">Contact</a></li>
                     <li class="nav-item"><a  id="dNBtn" class="ms-2 nav-link" style="cursor:pointer;" ><i class="fas fa-circle-half-stroke"></i></a></li>
                 </ul>
             </nav>
         </header>
-        <section class="container-fluid">
+        <section>
+            <div class="row" id="introduction">
+                <div class="col-7 mt-auto">
+                    <h1 class="display-6">Hello! My name is<span class="display-5 w3-text-blue">Pyae Phyo Hlaing</span><br>
+                        But You can also call me <span class="display-5 w3-text-light-blue">Drake</span>
+                    </h1>
+                    <h3 class="fs-2">
+                        I am a <span class="display-6 w3-text-red">UI/UX Designer</span><br>
+                        and <span class="display-6 w3-text-yellow">Frontend Web Developer</span>
+                    </h3>
+                </div>
+                <div class="col-5">
+                    <div class="">
+                        <img src="assets/IMG_7365.PNG" id="introImg" style="width: 100%;"alt="" class="border-2 border-info rounded-4 w3-light-blue img-fluid ">
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>
