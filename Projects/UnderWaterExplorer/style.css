@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+} 
+body{
+    background:darkslategray;
+}
+#Documentation{
+    text-align: center;
+}
+h5{
+    text-align: center;
+    font-size:15px;
+    font-family:'Lumanosimo',cursive;
+    text-shadow:3px 3px black;
+    color:white;
+}
+.hints{
+    color:gray;
+    margin-left:10px;
+    font-size:10px;
+    font-family: 'Lumanosimo', cursive;
+}
+.hints:hover{
+    color:yellow;
+}
+#introMessage{
+    color:yellow;
+}
+#points{
+    font-size:20px;
+    color:red;
+}
+#points:hover{
+    font-size:30px;
+}
+h2{
+    font-size: 100px;
+    font-family: 'Bangers',cursive;
+    color:gold;
+    text-shadow: 3px 3px black;
+    margin-left:20px;
+}
+#btn{
+    width:150px;
+    height:80px;
+    font-family:'Bangers',cursive;
+    padding:2px;
+    margin-bottom:20px;
+    margin-right:20px;
+    font-size:30px;
+    border-radius:20px;
+    background:black;
+    color:gold;
+    border:0px;
+    cursor:pointer;
+    display:block;
+    flex-direction: row;
+    justify-content: center;
+    float:right;
+}
+#canvas1{
+    border:5px solid black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform : translate(-50%,-50%);
+    background:#4d79bc;
+    max-width: 100%;
+    font-family:'Bangers',cursive;
+    max-height:100%;
+}
+#layer1,#layer2,#layer3,#layer4,#player,#angeler1,#angeler2,#lucky,#projectile,#gear,#hivewhale,#drone,#smoke,#fire{
+    display:none;
+}

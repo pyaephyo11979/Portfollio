@@ -1,0 +1,10 @@
+{
+    "npm.enableRunFromFolder": true,
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+    "javascript.format.insertSpaceAfterConstructor": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+    "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+    "javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+    "liveServer.settings.port": 5501
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Library Frameworks/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Library Frameworks/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="Library Frameworks/css/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>LiveSales</title>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row sticky-top z-3 " style="height:20px;" >
+            <nav class=" navbar navbar-expand-sm navbar-dark w3-light-gray" style="height:20px;">
+                <div class="container-fluid">
+                    <div class="w-100 d-flex flex-row justify-content-end">
+                        <ul class="navbar-nav d-flex flex-row ">
+                            <li class="nav-item px-sm-3"><a href="index.html" class="nav-link w3-text-black"><span class="d-none  d-lg-inline">Home</span><i class="ps-1  fas fa-home"></i></a></li>
+                            <li class="nav-item px-sm-3"><a href="#" class="nav-link w3-text-black"><span class="d-none  d-lg-inline">LiveSales</span><i class="ps-1  w3-text-black w3-hover-text-red fas fa-video-camera"></i></a></li>
+                            <li class="nav-item px-sm-3"><a href="#" class="nav-link w3-text-black"><span class="d-none  d-lg-inline">Messages</span><i class="ps-1  fas fa-message"></i></a></li>
+                            <li class="nav-item px-sm-3">
+                                <div class="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle   w3-text-black " data-bs-toggle="dropdown">Menu  </a>
+                                    <ul class="dropdown-menu  rounded-3 dropdown-menu-sm-end">
+                                        <li class="dropdown-item"><a href="#" class="text-decoration-none">Track Order Status <i class="fas fa-truck"></i></a></li>
+                                        <li class="dropdown-item"><a href="#" class="text-decoration-none">Sell on SMarket <i class="fas fa-circle-dollar-to-slot"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row sticky-top  position-fixed z-1 " style="width: 100%; margin-top: 20px;"  >
+            <nav class="navbar navbar-expand-sm navba-dark w3-blue-gray">
+                <a href="index.html" class="navbar-brand ms-2 "><span class="fs-1 w3-text-light-blue">SMarket</span></a>
+                <div class="container-fluid">
+                    <div class="flex-fill"></div>
+                    <div class="input-group rounded-4 shadow">
+                        <input type="text" name="sitem" id="sitem" class="form-control rounded-start-4">
+                        <button class="input-group-text rounded-end-4 " type="button" onclick="search()"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="flex-fill"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2"><a href="#" data-bs-toggle="modal" data-bs-target="#cartItems" class="nav-link"><i class="fas fa-shopping-cart"></i><span class="badge bg-danger rounded-pill" id="cart_item"></span></a></li>
+                    <li class="nav-item mx-2"><a href="#" class="nav-link"><i class="fas fs-2 fa-user-circle"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="modal" id="cartItems">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Cart<i class="fas fa-shopping-cart"></i></h2>
+                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success">Checkout <i class="fas fa-credit-card-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="" style="margin-top:100px">
+            <div class="row g-2 ">
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber">AeromaLiveSale</span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info"></a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="card-body">
+                        <span class="card-title fs-2 w3-text-amber"></span>
+                        <div class="card-image"><img src="" class="img-fluid" style="width: 100%;" alt="liveVideoImage"></div>
+                        <span class="fas fa-spinner text-info fa-spin-pulse"></span>
+                        <span class="w3-text-blue-gray">Loading</span>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-outline-info">ViewLiveSale</a></div>
+                </div>
+            </div>
+        </section>
+        <footer class="row bg-black w3-text-white mt-2">
+            <div class="col-12 col-lg-3">
+                <h3 class="fs-2 w3-text-sand">SMarket<span class="fs-5 w3-text-gray">.sh</span></h3><br>
+                <p>
+                    <span>CustomerCare<i class="fab fa-servicestack"></i></span>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="Library Frameworks/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+<script src="Library Frameworks/fontawesome-free-6.4.0-web/js/all.js"></script>
+<script src="script.js"></script>
+</html>

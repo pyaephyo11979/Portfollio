@@ -15,7 +15,7 @@
     <link rel="manifest" href="assets/site.webmanifest">
     <title>Portfolio</title>
 </head>
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offeset="50">
     <div class="container-fluid">
         <header class="sticky-top">
             <nav id="navBar" class="navbar bg-white opacity-100 container-fluid navbar-expand">
@@ -48,7 +48,7 @@
                 <div class="row mt-2">
                     <p class="fs-4 text-secondary">
                         I'm currently Studying Computer Science at University Of Computer Studies,Sittwe (UCSS) and have done alot of Web Projects , Such as "Ecommerence Site","Working Searching site",etc.<br>
-                        So if you are interested about <span >Hiring Me</span> <span class="w3-text-blue" ><a href="#" style="cursor:help;" class="text-decoration-none">Contact Now</a></span>
+                        So if you are interested about <span >Hiring Me</span> <span class="w3-text-blue" ><a  data-bs-toggle="offcanvas" data-bs-target="#offCV" style="cursor:help;" class="text-decoration-none">Contact Now</a></span>
                     </p>
                 </div>
                 <!-- <div class="mt-2 mb-2" id="qualifications">
@@ -113,39 +113,32 @@
                 <div class="col-12 col-lg-4 card">
                     <div class="card-body">
                         <div class="card-title">UnderWaterElxplorer</div>
-                        <img src="" alt="" class="img-fluid" style="width:40%;">
+                        <img src="assets/UnderWater.png" alt="" class="img-fluid" style="width:100%;">
                     </div>
                     <div class="card-footer">
-                        <a href="#" id="projBtn1" class="btn btn-primary">Play <i class="fas fa-gamepad"></i></a> 
+                        <a href="Projects\UnderWaterExplorer\index.html" id="projBtn1" class="btn btn-primary">Play <i class="fas fa-gamepad"></i></a> 
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 card">
                     <div class="card-body">
                         <div class="card-title">Ecommerence Site</div>
-                        <img src="" alt="" class="img-fluid" style="width:40%;">
+                        <img src="assets/ecommerence.png" alt="" class="img-fluid" style="width:100%;">
                     </div>
                     <div class="card-footer">
-                        <a href="#" id="projBtn2" class="btn btn-primary">Visit <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="Projects/Sample Shop Project1/index.html" id="projBtn2" class="btn btn-primary">Visit <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 card">
                     <div class="card-body">
                         <div class="card-title">WorkSearching Portal</div>
-                        <img src="" alt="" class="img-fluid" style="width:40%;">
+                        <img src="assets/WorkSearching.png" alt="" class="img-fluid" style="width:100%;">
                     </div>
                     <div class="card-footer">
-                        <a href="#" id="projBtn3" class="btn btn-primary">Visit <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="Projects/WorkSearchingProgram/index.html" id="projBtn3" class="btn btn-primary">Visit <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
             </div>
             <div id="Contact" class="row mt-2 container-fluid">
-                <form action="">
-                    <div class="row">
-                        <div class="col">
-
-                        </div>
-                    </div>
-                </form>
             </div>
         </section>
         <footer>
@@ -153,6 +146,13 @@
                 <h4>Copyright 2023 &copy; Pyae Phyo Hlaing</h4>
             </div>
         </footer>
+        <div class="offcanvas offcanvas-start" id="offCV">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Contacts</h1>
+                <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body"></div>
+        </div>
     </div>
 </body>
 <script src="LibraryFrameworks/JS/bootstrap.bundle.js"></script>
