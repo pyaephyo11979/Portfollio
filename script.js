@@ -8,8 +8,12 @@ let pBar2=document.getElementById('progressBar2');
 let pBar3=document.getElementById('progressBar3');
 let pBar4=document.getElementById('progressBar4');
 let projectBtn1=document.getElementById('projBtn1');
-let projectBtn2=document.getElementById('projBtn2')
-let projectBtn3=document.getElementById('projBtn3')
+let projectBtn2=document.getElementById('projBtn2');
+let projectBtn3=document.getElementById('projBtn3');
+let experiBtn1=document.getElementById('htmlCSSbtn');
+let experiBtn2=document.getElementById('jSbtn');
+let experiBtn3=document.getElementById('j2EEbtn');
+let experiBtn4=document.getElementById('figmabtn');
 function dark(){
     container.setAttribute('data-bs-theme','dark');
     navBar.classList.remove('bg-white');
@@ -31,6 +35,14 @@ function dark(){
     projectBtn2.classList.add('btn-warning');
     projectBtn3.classList.remove('btn-primary');
     projectBtn3.classList.add('btn-warning');
+    experiBtn1.classList.remove('btn-primary');
+    experiBtn1.classList.add('btn-warning');
+    experiBtn2.classList.remove('btn-primary');
+    experiBtn2.classList.add('btn-warning');
+    experiBtn3.classList.remove('btn-primary');
+    experiBtn3.classList.add('btn-warning');
+    experiBtn4.classList.remove('btn-primary');
+    experiBtn4.classList.add('btn-warning');
     button.style.color="white";
     
 }
@@ -54,6 +66,14 @@ function light(){
     projectBtn2.classList.add('btn-primary');
     projectBtn3.classList.remove('btn-warning');
     projectBtn3.classList.add('btn-primary');
+    experiBtn1.classList.remove('btn-warning');
+    experiBtn1.classList.add('btn-primary');
+    experiBtn2.classList.remove('btn-warning');
+    experiBtn2.classList.add('btn-primary');
+    experiBtn3.classList.remove('btn-warning');
+    experiBtn3.classList.add('btn-primary');
+    experiBtn4.classList.remove('btn-warning');
+    experiBtn4.classList.add('btn-primary');
     button.style.color="black";
 }
 button.addEventListener('click',()=>{
