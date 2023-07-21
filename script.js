@@ -14,6 +14,8 @@ let experiBtn1=document.getElementById('htmlCSSbtn');
 let experiBtn2=document.getElementById('jSbtn');
 let experiBtn3=document.getElementById('j2EEbtn');
 let experiBtn4=document.getElementById('figmabtn');
+let darkThemeDetector=window.matchMedia("(prefers-color-scheme:dark)");
+let themeMatch=darkThemeDetector.matches
 function dark(){
     container.setAttribute('data-bs-theme','dark');
     navBar.classList.remove('bg-white');
@@ -76,10 +78,15 @@ function light(){
     experiBtn4.classList.add('btn-primary');
     button.style.color="black";
 }
+if(themeMatch){
+    dark();
+}else{
+    light();
+}
 button.addEventListener('click',()=>{
-    if(!container.hasAttribute('data-bs-theme')){
+    if(!container.hasAttribute('data-bs-theme') ){
          dark();
-    }else if(container.hasAttribute('data-bs-theme')){
+    }else if(container.hasAttribute('data-bs-theme') ){
         light();
         container.removeAttribute('data-bs-theme')
     }
