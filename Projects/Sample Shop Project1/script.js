@@ -17,10 +17,33 @@ product.forEach((val)=>{
             <p class="mt-auto"><b>$ ${val.price}</b></p>
         </div>
         <div class="card-footer">
-            <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productinfo">BuyNow <i class="fas fa-credit-card"></i> </button>
+            <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${val.id}">BuyNow <i class="fas fa-credit-card"></i> </button>
             <button type="button" id="btn" onclick="addtocart()" class="btn btn-secondary">AddToCart <i class="fas fa-shopping-cart"></i></button>
         </div>
     </div>
+</div>
+<div class="modal" id="${val.id}">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="display-5 modal-title">${val.title}</h2>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+       
+            <div class="">
+                <img src="${val.image}" class="img-fluid" style="width:100%">
+                <p class="">${val.description}</p>
+                <h4 class="row">$ ${val.price}</h4>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn btn-success">BuyNow <i class="fas fa-credit-card"></i></a>
+            <button onclick="addtocart()" id="btn" class="btn btn-primary">AddToCart <i class="fas fa-shopping-cart"></i></button>
+            <button onclick="removefromcart()" class="btn btn-secondary">RemovefromCart<i class="fas fa-shopping-cart w3-text-red"></i></button>
+        </div>
+    </div>
+</div>
 </div>
     ` 
     console.log(val.category);
