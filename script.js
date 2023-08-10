@@ -1,7 +1,6 @@
 let container=document.querySelector('body');
 let  button=document.getElementById('dNBtn');
 let navItem=document.getElementById("navItem");
-let navBar=document.getElementById("navBar");
 let profileImg=document.getElementById("introImg");
 let pBar1=document.getElementById('progressBar1');
 let pBar2=document.getElementById('progressBar2');
@@ -18,9 +17,6 @@ let darkThemeDetector=window.matchMedia("(prefers-color-scheme:dark)");
 let themeMatch=darkThemeDetector.matches
 function dark(){
     container.setAttribute('data-bs-theme','dark');
-    navBar.classList.remove('bg-white');
-    navBar.classList.remove('bg-light');
-    navBar.classList.add('bg-dark');
     profileImg.classList.remove('w3-light-blue');
     profileImg.classList.add('w3-amber');
     pBar1.classList.remove('w3-blue');
@@ -50,8 +46,6 @@ function dark(){
 }
 function light(){
     container.setAttribute('data-bs-theme','light');
-    navBar.classList.remove('bg-dark');
-    navBar.classList.add('bg-light');
     profileImg.classList.remove('w3-amber');
     profileImg.classList.add('w3-light-blue');
     pBar1.classList.remove('w3-amber');
