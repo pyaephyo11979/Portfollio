@@ -1,3 +1,4 @@
+AOS.init();
 let container=document.querySelector('body');
 let  button=document.getElementById('dNBtn');
 let navItem=document.getElementById("navItem");
@@ -85,4 +86,3 @@ button.addEventListener('click',()=>{
         container.removeAttribute('data-bs-theme')
     }
 });
-AOS.init();
