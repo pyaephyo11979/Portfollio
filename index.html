@@ -151,21 +151,21 @@
                 <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body">
-                <form action="https://send.pageclip.co/03WOo0ISWfaw33vFPdaEdn8g6TVd75RF" class="pageclip-form" method="post">
+                <form action="https://send.pageclip.co/03WOo0ISWfaw33vFPdaEdn8g6TVd75RF/ContactForm" class="pageclip-form" method="post">
                     <div>
-                        <label for="name" class="form-label">Enter Your Name:</label>
-                        <input type="text" class="form-control" name="name">
+                        <label for="name" class="form-label" >Enter Your Name:</label>
+                        <input type="text" class="form-control" name="name" required>
                     </div>
                     <div>
                         <label for="email" class="form-label">Enter Your Email:</label>
-                        <input type="email" class="form-control" name="email">
+                        <input type="email" class="form-control" name="email" required>
                     </div>
                     <div>
                         <label for="textarea" class="form-label">Message:</label>
-                        <textarea rows="5" class="form-control" name="textarea"></textarea>
+                        <textarea rows="5" class="form-control" name="textarea" required></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary mt-3">Send Now <i class="fas fa-paper-plane"></i></button>
+                        <button type="submit" class="btn pageclip-form__submit  btn-primary mt-3"><span>Send Now <i class="fas fa-paper-plane"></i></span></button>
                     </div>
                 </form>
             </div>
