@@ -62,5 +62,17 @@ buttons.forEach((button)=>{
             container.removeAttribute('data-bs-theme')
         }
     });
-})
+});
+let loadingIndicator=document.getElementById("loading");
+document.onreadystatechange=()=>{
+   if(document.readyState !== "complete"){
+    document.querySelector('body').style.visibility="hidden";
+    loadingIndicator.style.visibility="visible";
+   }else{
+    setTimeout(()=>{
+        document.querySelector('body').style.visibility="visible"
+        loadingIndicator.style.display="none";
+    },3000)
+   }
+}
 AOS.init();
