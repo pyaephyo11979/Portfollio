@@ -1,11 +1,7 @@
 let container=document.querySelector('body');
-let  button=document.getElementById('dNBtn');
+let  buttons=document.querySelectorAll('.dNBtn');
 let navItem=document.getElementById("navItem");
 let profileImg=document.getElementById("introImg");
-let pBar1=document.getElementById('progressBar1');
-let pBar2=document.getElementById('progressBar2');
-let pBar3=document.getElementById('progressBar3');
-let pBar4=document.getElementById('progressBar4');
 let pBars=document.querySelectorAll('.pBar');
 let projectBtns=document.querySelectorAll('.projBtn');
 let experiBtns=document.querySelectorAll('.experiBtn');
@@ -27,7 +23,9 @@ function dark(){
         btn.classList.remove('btn-primary');
         btn.classList.add('btn-warning');
     })
-    button.style.color="white";
+    buttons.forEach((btn)=>{
+        btn.style.color="white";
+    })
     
 }
 function light(){
@@ -46,19 +44,23 @@ function light(){
         btn.classList.remove('btn-warning');
         btn.classList.add('btn-primary');
     })
-    button.style.color="black";
+    buttons.forEach((btn)=>{
+        btn.style.color="black";
+    })
 }
 if(themeMatch){
     dark();
 }else{
     light();
 }
-button.addEventListener('click',()=>{
-    if(!container.hasAttribute('data-bs-theme') ){
-         dark();
-    }else if(container.hasAttribute('data-bs-theme') ){
-        light();
-        container.removeAttribute('data-bs-theme')
-    }
-});
+buttons.forEach((button)=>{
+    button.addEventListener('click',()=>{
+        if(!container.hasAttribute('data-bs-theme') ){
+             dark();
+        }else if(container.hasAttribute('data-bs-theme') ){
+            light();
+            container.removeAttribute('data-bs-theme')
+        }
+    });
+})
 AOS.init();
